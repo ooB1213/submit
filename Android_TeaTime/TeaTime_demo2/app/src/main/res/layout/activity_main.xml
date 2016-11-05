@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".main.view.MainActivity"
+    android:orientation="vertical">
+
+
+    <!--
+    각 뷰의 아이디를 종류/액티비티에 따라 지어줍니다
+    예를 들어
+    이미지뷰면 'img'를 앞에 붙이고
+    프로필 사진을 보여주는 이미지뷰이면 'img' + 'Profile'
+    메인액티비티에서 사용하면 뒤에 '_Main'을 붙여서
+    'imgProfile_Main'이 되도록
+
+    텍스트뷰면 'txt'를 앞에 붙이고
+    이름을 보여주는 텍스트뷰이면 'txt' + 'Name'
+    ListActivity에서 사용하면 뒤에 '_List'을 붙여서
+    'txtName_List'가 되도록
+    -->
+
+    <ImageView
+        android:id="@+id/imgProfile_Main"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/txtName_Main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이름 : " />
+
+    <TextView
+        android:id="@+id/txtMail_Main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="메일 : " />
+
+    <Button
+        android:id="@+id/btnGetData_Main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="서버에서 단일 데이터 받아오기"/>
+
+    <Button
+        android:id="@+id/btnMove_Main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="리스트 받아오는 액티비티로 이동"/>
+
+</LinearLayout>
